@@ -18,8 +18,8 @@ bottoneGenera.addEventListener('click',
         console.log(kmViaggio);
 
         // prezzo generico del biglietto
-         prezzoBiglietto = (0.21 * kmViaggio);
-        // console.log(prezzoBiglietto);
+        prezzoBiglietto = (0.21 * kmViaggio);
+        console.log(prezzoBiglietto);
 
         // prendo il valore della fascia d'età
         const userAge = document.getElementById("myList").value
@@ -47,11 +47,11 @@ bottoneGenera.addEventListener('click',
 
         }
 
-
-
-
+        // stampo il prezzo finale
         document.getElementById("ticket-price").innerHTML = prezzoBiglietto;
 
+        // stampa del biglietto
+        document.querySelector("div.ticket-down").classList.add("active");
 
     }
 

@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* regole container generale */
 .general-container{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -12,6 +13,7 @@
     color: white;
 }
 
+/* container bootstrap */
 .container{
     color: black;
     background-color: white;
@@ -34,6 +36,7 @@
     padding-bottom: 50px;
 }
 
+/* regole bottone */
 .personal-button{
     padding: 10px;
     background-color: lightgray;
@@ -42,5 +45,14 @@
 
 .details{
     background-color: lightgray;
+}
+
+/* regole stampa biglietto */
+.ticket-down{
+    display: none;
+}
+
+.active{
+    display: block;
 }
 
