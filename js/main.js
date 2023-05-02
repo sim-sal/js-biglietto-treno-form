@@ -2,7 +2,7 @@
 var userName, kmViaggio, prezzoBiglietto;
 
 var bottoneGenera = document.querySelector("button.generate-button");
-
+var bottoneAnnulla = document.querySelector("button.cancel-button");
 
 // stampo il nome e prendo i km
 bottoneGenera.addEventListener('click',
@@ -55,6 +55,16 @@ bottoneGenera.addEventListener('click',
 
     }
 
-
 );
+
+// azzeriamo i valori per nuovo biglietto
+bottoneAnnulla.addEventListener('click',
+
+    function(){
+        location.reload();
+    }
+
+)
+
+
 
