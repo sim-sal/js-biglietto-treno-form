@@ -1,5 +1,5 @@
 // dichiaro le variabili
-var userName, kmViaggio, prezzoBiglietto, userAge;
+var userName, kmViaggio, prezzoBiglietto;
 
 var bottoneGenera = document.querySelector("button.generate-button");
 
@@ -21,15 +21,18 @@ bottoneGenera.addEventListener('click',
          prezzoBiglietto = (0.21 * kmViaggio);
         // console.log(prezzoBiglietto);
 
+        // prendo il valore della fascia d'età
+        const userAge = document.getElementById("myList").value
+
         // prezzo biglietto minorenni
-        if (userAge = document.getElementById("Minorenne") ){
+        if (userAge == 'Minorenne'){
 
             prezzoBiglietto = (prezzoBiglietto * 0.8);
             console.log(prezzoBiglietto);
 
         } 
         // prezzo standard
-        else if (userAge = document.getElementById("Maggiorenne") ){
+        else if (userAge == 'Maggiorenne'){
 
             prezzoBiglietto = prezzoBiglietto;
             console.log(prezzoBiglietto);
@@ -37,7 +40,7 @@ bottoneGenera.addEventListener('click',
         }
 
         // prezzo over
-        else if (userAge = document.getElementById("over") ){
+        else if (userAge == 'over'){
 
             prezzoBiglietto = (prezzoBiglietto * 0.6);
             console.log(prezzoBiglietto);
